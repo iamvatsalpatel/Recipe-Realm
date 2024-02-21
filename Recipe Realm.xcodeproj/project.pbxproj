@@ -14,6 +14,13 @@
 		25EBDCC02B856B9300A3783F /* Recipe_RealmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EBDCBF2B856B9300A3783F /* Recipe_RealmTests.swift */; };
 		25EBDCCA2B856B9300A3783F /* Recipe_RealmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EBDCC92B856B9300A3783F /* Recipe_RealmUITests.swift */; };
 		25EBDCCC2B856B9300A3783F /* Recipe_RealmUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EBDCCB2B856B9300A3783F /* Recipe_RealmUITestsLaunchTests.swift */; };
+		25EBDCE22B856DF000A3783F /* DessertsAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EBDCE12B856DF000A3783F /* DessertsAPIResponse.swift */; };
+		25EBDCE72B856F0100A3783F /* DetailRecipeAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EBDCE62B856F0100A3783F /* DetailRecipeAPIResponse.swift */; };
+		25EBDCE92B856F4B00A3783F /* DessertsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EBDCE82B856F4B00A3783F /* DessertsAPI.swift */; };
+		25EBDCEC2B85700000A3783F /* DetailRecipeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EBDCEB2B85700000A3783F /* DetailRecipeAPI.swift */; };
+		25EBDCEE2B858C0D00A3783F /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EBDCED2B858C0D00A3783F /* ListCell.swift */; };
+		25EBDCF02B85904900A3783F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EBDCEF2B85904900A3783F /* Extensions.swift */; };
+		25EBDCF62B85A4A400A3783F /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EBDCF52B85A4A400A3783F /* RecipeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		25EBDCC52B856B9300A3783F /* Recipe RealmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Recipe RealmUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25EBDCC92B856B9300A3783F /* Recipe_RealmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe_RealmUITests.swift; sourceTree = "<group>"; };
 		25EBDCCB2B856B9300A3783F /* Recipe_RealmUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe_RealmUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		25EBDCE12B856DF000A3783F /* DessertsAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertsAPIResponse.swift; sourceTree = "<group>"; };
+		25EBDCE62B856F0100A3783F /* DetailRecipeAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecipeAPIResponse.swift; sourceTree = "<group>"; };
+		25EBDCE82B856F4B00A3783F /* DessertsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertsAPI.swift; sourceTree = "<group>"; };
+		25EBDCEB2B85700000A3783F /* DetailRecipeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecipeAPI.swift; sourceTree = "<group>"; };
+		25EBDCED2B858C0D00A3783F /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		25EBDCEF2B85904900A3783F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		25EBDCF52B85A4A400A3783F /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25C691332B86287300138BCD /* DetailViews */ = {
+			isa = PBXGroup;
+			children = (
+				25EBDCF52B85A4A400A3783F /* RecipeView.swift */,
+			);
+			path = DetailViews;
+			sourceTree = "<group>";
+		};
 		25EBDCA22B856B9100A3783F = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +116,11 @@
 		25EBDCAD2B856B9100A3783F /* Recipe Realm */ = {
 			isa = PBXGroup;
 			children = (
-				25EBDCAE2B856B9100A3783F /* Recipe_RealmApp.swift */,
-				25EBDCB02B856B9100A3783F /* ContentView.swift */,
+				25EBDCD82B856BA400A3783F /* App */,
+				25EBDCD92B856BB900A3783F /* Core */,
+				25EBDCE32B856DFA00A3783F /* Model */,
+				25EBDCEA2B856FE400A3783F /* Services */,
+				25EBDCF12B85905700A3783F /* Extensions */,
 				25EBDCB22B856B9300A3783F /* Assets.xcassets */,
 				25EBDCB42B856B9300A3783F /* Preview Content */,
 			);
@@ -125,6 +150,66 @@
 				25EBDCCB2B856B9300A3783F /* Recipe_RealmUITestsLaunchTests.swift */,
 			);
 			path = "Recipe RealmUITests";
+			sourceTree = "<group>";
+		};
+		25EBDCD82B856BA400A3783F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				25EBDCAE2B856B9100A3783F /* Recipe_RealmApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		25EBDCD92B856BB900A3783F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				25EBDCDA2B856BBD00A3783F /* RootView */,
+				25EBDCF22B8590D500A3783F /* Components */,
+				25C691332B86287300138BCD /* DetailViews */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		25EBDCDA2B856BBD00A3783F /* RootView */ = {
+			isa = PBXGroup;
+			children = (
+				25EBDCB02B856B9100A3783F /* ContentView.swift */,
+			);
+			path = RootView;
+			sourceTree = "<group>";
+		};
+		25EBDCE32B856DFA00A3783F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				25EBDCE12B856DF000A3783F /* DessertsAPIResponse.swift */,
+				25EBDCE62B856F0100A3783F /* DetailRecipeAPIResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		25EBDCEA2B856FE400A3783F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				25EBDCE82B856F4B00A3783F /* DessertsAPI.swift */,
+				25EBDCEB2B85700000A3783F /* DetailRecipeAPI.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		25EBDCF12B85905700A3783F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				25EBDCEF2B85904900A3783F /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		25EBDCF22B8590D500A3783F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				25EBDCED2B858C0D00A3783F /* ListCell.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +342,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25EBDCE72B856F0100A3783F /* DetailRecipeAPIResponse.swift in Sources */,
+				25EBDCEC2B85700000A3783F /* DetailRecipeAPI.swift in Sources */,
+				25EBDCE92B856F4B00A3783F /* DessertsAPI.swift in Sources */,
+				25EBDCF62B85A4A400A3783F /* RecipeView.swift in Sources */,
+				25EBDCF02B85904900A3783F /* Extensions.swift in Sources */,
+				25EBDCEE2B858C0D00A3783F /* ListCell.swift in Sources */,
 				25EBDCB12B856B9100A3783F /* ContentView.swift in Sources */,
 				25EBDCAF2B856B9100A3783F /* Recipe_RealmApp.swift in Sources */,
+				25EBDCE22B856DF000A3783F /* DessertsAPIResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,8 +520,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,8 +548,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
